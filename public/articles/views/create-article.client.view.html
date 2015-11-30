@@ -1,22 +1,26 @@
 <section data-ng-controller="ArticlesController">
 	<h1>New Article</h1>
+
 	<form data-ng-submit="create()" novalidate>
-		<div>
-			<label for="title">Title</label>
-			<div>
-				<input type="text" data-ng-model="title" id="title" placeholder="Title" required>
+
+		<div flex-container="row">
+			<div flex-item>
+				<lx-text-field label="Titulo del artículo">
+					<input type="text" data-ng-model="title" id="title" required>
+				</lx-text-field>
 			</div>
 		</div>
-		
-		<div>
-			<label for="content">Content</label>
-			<div>
-				<textarea data-ng-model="content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
+
+		<div flex-container="row">
+			<div flex-item>
+				<lx-text-field label="Contenido del artículo">
+					<textarea data-ng-model="content" id="content" cols="30" rows="10"></textarea>
+				</lx-text-field>
 			</div>
 		</div>
 
 		<div>
-			<input type="submit">
+			<input type="submit" class="btn btn--l btn--blue btn--raised" lx-ripple>
 		</div>
 
 		<div data-ng-show="error">

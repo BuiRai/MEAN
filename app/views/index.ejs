@@ -3,6 +3,8 @@
 <html>
 <head>
 	<title><%= title %></title>
+	<link rel="stylesheet" href="/lib/lumx/dist/lumx.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 </head>
 <body>
 	<section ng-view></section>
@@ -15,6 +17,12 @@
 	<script type="text/javascript" src="/lib/angular/angular.js"></script>
 	<script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
 	<script type="text/javascript" src="/lib/angular-resource/angular-resource.js"></script>
+	
+	<!--Dependencies to lumX-->
+	<script src="/lib/jquery/dist/jquery.js"></script>
+	<script src="/lib/velocity/velocity.js"></script>
+	<script src="/lib/moment/min/moment-with-locales.js"></script>
+	<script src="/lib/lumx/dist/lumx.js"></script>
 
 	<!--Include articles module-->
 	<script type="text/javascript" src="/articles/articles.client.module.js"></script>
