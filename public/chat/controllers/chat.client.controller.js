@@ -15,7 +15,10 @@ angular.module('chat').controller('ChatController', ['$scope', 'Socket',
 		*/
 		$scope.sendMessage = function() {
 			var message = {
+
+				//this.messageText is defined on the view that use ng-model="messageText"
 				text: this.messageText,
+
 			};
 
 			Socket.emit('chatMessage', message);
