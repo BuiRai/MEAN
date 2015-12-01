@@ -24,6 +24,7 @@ angular.module('chat').service('Socket', ['Authentication', '$location', '$timeo
 
 		//Wrap the method socket.emit(eventName, data)
 		this.emit = function(eventName, data) {
+
 			if (this.socket) {
 				this.socket.emit(eventName, data);
 			}
